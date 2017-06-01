@@ -1,0 +1,24 @@
+package manju;
+
+import java.util.Scanner;
+
+public class Assignment3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int a,s=0,b;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter value:");
+        a=sc.nextInt();
+        
+ while(a!=0)
+ {
+	b=a%10;
+	s=s+b;
+	a=a/10;
+ }
+ System.out.println("Sum of individual digits is:"+s);
+	}
+
+	}
