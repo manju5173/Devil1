@@ -1,0 +1,36 @@
+package manju;
+class DisplayOverloading
+{
+    public void sum(int a,int b)
+    {
+    	System.out.println("normal method");
+         int c=a+b;
+         System.out.println(c);
+    }
+    public void sum(double e, int b,double c)  
+    {
+    	//overloading method
+    	System.out.println("overload method");
+    	double d=e+b+c;
+         System.out.println(d);
+    }
+}
+public class Assignment7 extends DisplayOverloading
+{
+	//overriding method
+	public void sum(int x,int y)
+	   {
+		  int z=x+y; 
+		  System.out.println("overriding method");
+		  System.out.println(z);
+	   }
+		public static void main(String args[])
+			{
+				Assignment7 ass7=new Assignment7();
+				ass7.sum(10, 15);
+		   
+				DisplayOverloading ovl = new DisplayOverloading();
+				ovl.sum(16, 15);
+				ovl.sum(15.5, 12, 1000); 
+			}
+}
