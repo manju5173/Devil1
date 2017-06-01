@@ -1,0 +1,24 @@
+package manju;
+import java.*;
+import java.util.Scanner;
+public class Assignment2 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		int a,r=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter value:");
+        a=sc.nextInt();
+        
+        while(a!=0)
+        	{
+        	  r=r*10;
+        	  r=r+a%10;
+        	  a=a/10;	 
+        	}
+        System.out.println("reverse is:"+r);
+	}
+
+}
